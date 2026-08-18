@@ -1,0 +1,81 @@
+{
+  "name": "dev-sidebar-dashboard",
+  "displayName": "Dev Dashboard",
+  "description": "A sidebar panel with a pomodoro timer, live git session stats, and a todo list.",
+  "version": "0.1.0",
+  "publisher": "lauren",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "devDashboardContainer",
+          "title": "Dev Dashboard",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "devDashboardContainer": [
+        {
+          "id": "devDashboard.panel",
+          "name": "Dashboard",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "devDashboard.resetSession",
+        "title": "Dev Dashboard: Reset Session Stats",
+        "icon": "$(refresh)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "devDashboard.resetSession",
+          "when": "view == devDashboard.panel",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Dev Dashboard",
+      "properties": {
+        "devDashboard.pomodoroMinutes": {
+          "type": "number",
+          "default": 25,
+          "description": "Length of a focus session, in minutes."
+        },
+        "devDashboard.breakMinutes": {
+          "type": "number",
+          "default": 5,
+          "description": "Length of a break, in minutes."
+        },
+        "devDashboard.gitPollSeconds": {
+          "type": "number",
+          "default": 15,
+          "description": "How often to refresh git session stats, in seconds."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}
