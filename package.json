@@ -2,7 +2,7 @@
   "name": "dev-sidebar-dashboard",
   "displayName": "Dev Dashboard: Pomodoro & Git Stats",
   "description": "A sidebar panel with a pomodoro timer, live git session stats, and a todo list.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "laurenp-2",
   "license": "MIT",
   "icon": "resources/icon.png",

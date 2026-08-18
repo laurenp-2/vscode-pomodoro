@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Exact per-commit line attribution using `git log --numstat`
 - Optional daily auto-reset of the session baseline
 
+## [0.1.1] - 2026-08-18
+
+### Changed
+
+- New custom pomodoro icon for the Activity Bar and Marketplace
+- Added demo recording, changelog, and license to the listing
+
 ## [0.1.0] - 2026-08-18
 
 ### Added
