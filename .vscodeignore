@@ -4,3 +4,4 @@ src/**
 tsconfig.json
 **/*.map
 node_modules/**
+media/demo.gif

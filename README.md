@@ -1,5 +1,12 @@
 # Dev Dashboard
 
+[![Version](https://img.shields.io/visual-studio-marketplace/v/laurenp-2.dev-sidebar-dashboard)](https://marketplace.visualstudio.com/items?itemName=laurenp-2.dev-sidebar-dashboard)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/laurenp-2.dev-sidebar-dashboard)](https://marketplace.visualstudio.com/items?itemName=laurenp-2.dev-sidebar-dashboard)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/laurenp-2.dev-sidebar-dashboard)](https://marketplace.visualstudio.com/items?itemName=laurenp-2.dev-sidebar-dashboard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+![Dev Dashboard in action](https://raw.githubusercontent.com/laurenp-2/vscode-pomodoro/main/media/demo.gif)
+
 A lightweight VS Code sidebar for staying focused while you work. It includes:
 
 - A configurable Pomodoro timer with work and break sessions
@@ -49,3 +56,7 @@ Configure the timer and Git refresh interval in VS Code settings:
 - `devDashboard.pomodoroMinutes` — focus session length; default `25`
 - `devDashboard.breakMinutes` — break length; default `5`
 - `devDashboard.gitPollSeconds` — Git refresh interval; default `15`
+
+## License
+
+[MIT](./LICENSE)

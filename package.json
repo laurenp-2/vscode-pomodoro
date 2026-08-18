@@ -3,13 +3,40 @@
   "displayName": "Dev Dashboard",
   "description": "A sidebar panel with a pomodoro timer, live git session stats, and a todo list.",
   "version": "0.1.0",
-  "publisher": "lauren",
+  "publisher": "laurenp-2",
+  "license": "MIT",
+  "icon": "resources/icon.png",
+  "galleryBanner": {
+    "color": "#242938",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Visualization"
   ],
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "todo",
+    "git",
+    "productivity",
+    "dashboard",
+    "focus",
+    "statistics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laurenp-2/vscode-pomodoro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/laurenp-2/vscode-pomodoro/issues"
+  },
+  "homepage": "https://github.com/laurenp-2/vscode-pomodoro#readme",
+  "qna": "marketplace",
+  "pricing": "Free",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
